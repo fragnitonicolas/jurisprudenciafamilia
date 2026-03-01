@@ -1,0 +1,11 @@
+{
+  "name": "@jurisprudenciafamilia/cli",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run"
+  }
+}
