@@ -6,117 +6,63 @@
     <title>Jurisprudencia Familia</title>
     <meta
       name="description"
-      content="Plataforma de jurisprudencia de familia: fallos, criterios judiciales, búsqueda y análisis jurídico."
+      content="Buscador y base documental de jurisprudencia de derecho de familia en español."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="#inicio">Jurisprudencia Familia</a>
-        <nav class="nav" aria-label="Navegación principal">
-          <a href="#inicio">Inicio</a>
-          <a href="#caracteristicas">Características</a>
-          <a href="#casos">Casos</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="inicio">
-      <section class="hero container">
-        <p class="eyebrow">Plataforma jurídica especializada en derecho de familia</p>
-        <h1>La web completa de base para construir tu buscador de jurisprudencia</h1>
+    <main class="page">
+      <header class="hero">
+        <p class="badge">Proyecto en construcción</p>
+        <h1>Jurisprudencia de Familia, clara y accesible</h1>
         <p class="lead">
-          Esta versión ya incluye una home completa con secciones reales de producto, casos
-          representativos, roadmap y contacto. Está lista para evolucionar hacia búsqueda avanzada.
+          Unificamos fallos, doctrina y criterios para consultar más rápido, con trazabilidad y
+          enfoque práctico para abogados, estudiantes y equipos legales.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#caracteristicas">Explorar plataforma</a>
-          <a class="btn btn-secondary" href="#contacto">Solicitar demo</a>
+          <a class="btn btn-primary" href="#roadmap">Ver roadmap</a>
+          <a class="btn btn-ghost" href="https://github.com/fragintonicolas/jurisprudenciafamilia"
+            >Repositorio</a
+          >
         </div>
+      </header>
+
+      <section class="grid" aria-label="beneficios">
+        <article class="card">
+          <h2>🔎 Búsqueda semántica</h2>
+          <p>
+            Indexación preparada para consultas por temas, tribunal, fecha y conceptos jurídicos.
+          </p>
+        </article>
+        <article class="card">
+          <h2>⚖️ Enfoque jurídico</h2>
+          <p>
+            Diseñado para derecho de familia: alimentos, cuidado personal, régimen de comunicación,
+            violencia y filiación.
+          </p>
+        </article>
+        <article class="card">
+          <h2>🧱 Monorepo escalable</h2>
+          <p>
+            Arquitectura modular con paquetes compartidos para recolección, CLI y frontend.
+          </p>
+        </article>
       </section>
 
-      <section id="caracteristicas" class="container section">
-        <h2>Qué incluye esta base web</h2>
-        <div class="grid features">
-          <article class="card">
-            <h3>🔎 Búsqueda jurídica</h3>
-            <p>Preparada para filtros por tribunal, año, materia, tipo de conflicto y palabras clave.</p>
-          </article>
-          <article class="card">
-            <h3>🧠 Resúmenes accionables</h3>
-            <p>Espacio para incorporar extractos con hechos, ratio decidendi y criterio aplicable.</p>
-          </article>
-          <article class="card">
-            <h3>⚖️ Cobertura temática</h3>
-            <p>Alimentos, cuidado personal, comunicación, filiación, adopción y violencia familiar.</p>
-          </article>
-          <article class="card">
-            <h3>📑 Trazabilidad</h3>
-            <p>Diseño orientado a enlazar fuentes originales y referencias normativas por caso.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="casos" class="container section">
-        <h2>Casos representativos (demo)</h2>
-        <div class="grid cases">
-          <article class="card case-card">
-            <span class="pill">Alimentos</span>
-            <h3>Actualización por inflación y capacidad contributiva</h3>
-            <p>
-              Criterio sobre proporcionalidad entre necesidades del menor y variación de ingresos del
-              alimentante.
-            </p>
-          </article>
-          <article class="card case-card">
-            <span class="pill">Cuidado personal</span>
-            <h3>Coparentalidad con plan progresivo</h3>
-            <p>
-              Jurisprudencia sobre transición de régimen unilateral a compartido con evaluación técnica.
-            </p>
-          </article>
-          <article class="card case-card">
-            <span class="pill">Comunicación</span>
-            <h3>Vínculo con familia extensa</h3>
-            <p>
-              Fallo sobre continuidad de contacto con abuelos y red de apoyo, priorizando interés superior.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="roadmap" class="container section">
-        <h2>Roadmap de producto</h2>
-        <ol class="roadmap-list">
-          <li><strong>Fase 1:</strong> Recolección y limpieza de sentencias.</li>
-          <li><strong>Fase 2:</strong> Indexación full-text + semántica.</li>
-          <li><strong>Fase 3:</strong> Perfil de caso y comparador de criterios.</li>
-          <li><strong>Fase 4:</strong> Alertas jurídicas y reportes descargables.</li>
+      <section id="roadmap" class="roadmap" aria-label="roadmap">
+        <h2>Roadmap inicial</h2>
+        <ol>
+          <li><strong>Ingesta:</strong> normalización de fuentes y metadatos judiciales.</li>
+          <li><strong>Indexado:</strong> pipeline de búsqueda full-text + semantic.</li>
+          <li><strong>Interfaz:</strong> filtros avanzados y ficha de fallo enriquecida.</li>
         </ol>
       </section>
-
-      <section id="contacto" class="container section contact">
-        <h2>Contacto</h2>
-        <p>
-          ¿Querés que esta base evolucione a un producto real con buscador y panel de análisis?
-          Abrí un issue en el repositorio y definimos alcance.
-        </p>
-        <a class="btn btn-primary" href="https://github.com/fragintonicolas/jurisprudenciafamilia/issues"
-          >Abrir issue</a
-        >
-      </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-wrap">
-        <p>© <span id="year"></span> Jurisprudencia Familia</p>
-        <a href="https://github.com/fragintonicolas/jurisprudenciafamilia">GitHub</a>
-      </div>
-    </footer>
-
-    <script type="module" src="./main.js"></script>
   </body>
 </html>
