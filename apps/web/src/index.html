@@ -8,38 +8,60 @@
       name="description"
       content="Buscador y base documental de jurisprudencia de derecho de familia en español."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="page">
       <header class="hero">
-        <p class="badge">Estado: base técnica creada ✅</p>
-        <h1>Jurisprudencia de Familia</h1>
+        <p class="badge">Proyecto en construcción</p>
+        <h1>Jurisprudencia de Familia, clara y accesible</h1>
         <p class="lead">
-          Esta es la nueva landing del monorepo. Si ves una página blanca con texto viejo, entonces
-          GitHub Pages todavía está mostrando una versión anterior.
+          Unificamos fallos, doctrina y criterios para consultar más rápido, con trazabilidad y
+          enfoque práctico para abogados, estudiantes y equipos legales.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#estado">Ver estado actual</a>
+          <a class="btn btn-primary" href="#roadmap">Ver roadmap</a>
           <a class="btn btn-ghost" href="https://github.com/fragintonicolas/jurisprudenciafamilia"
-            >Ir al repositorio</a
+            >Repositorio</a
           >
         </div>
       </header>
 
-      <section id="estado" class="grid" aria-label="estado del proyecto">
+      <section class="grid" aria-label="beneficios">
         <article class="card">
-          <h2>📦 Monorepo listo</h2>
-          <p>Apps y paquetes separados (`apps/web`, `packages/core`, `packages/cli`).</p>
+          <h2>🔎 Búsqueda semántica</h2>
+          <p>
+            Indexación preparada para consultas por temas, tribunal, fecha y conceptos jurídicos.
+          </p>
         </article>
         <article class="card">
-          <h2>🚀 Deploy automático</h2>
-          <p>Workflow de GitHub Pages configurado para publicar los cambios del frontend.</p>
+          <h2>⚖️ Enfoque jurídico</h2>
+          <p>
+            Diseñado para derecho de familia: alimentos, cuidado personal, régimen de comunicación,
+            violencia y filiación.
+          </p>
         </article>
         <article class="card">
-          <h2>🧭 Próximo paso</h2>
-          <p>Construir la experiencia de búsqueda jurídica sobre esta base.</p>
+          <h2>🧱 Monorepo escalable</h2>
+          <p>
+            Arquitectura modular con paquetes compartidos para recolección, CLI y frontend.
+          </p>
         </article>
+      </section>
+
+      <section id="roadmap" class="roadmap" aria-label="roadmap">
+        <h2>Roadmap inicial</h2>
+        <ol>
+          <li><strong>Ingesta:</strong> normalización de fuentes y metadatos judiciales.</li>
+          <li><strong>Indexado:</strong> pipeline de búsqueda full-text + semantic.</li>
+          <li><strong>Interfaz:</strong> filtros avanzados y ficha de fallo enriquecida.</li>
+        </ol>
       </section>
     </main>
   </body>
