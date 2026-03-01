@@ -1,0 +1,23 @@
+node_modules/
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Tooling
+.eslintcache
+*.tsbuildinfo
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
