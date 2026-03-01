@@ -1,0 +1,13 @@
+{
+  "name": "@jurisprudenciafamilia/core",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "collect": "node ./src/collect.js",
+    "build-search-index": "node ./src/build-search-index.js",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run"
+  }
+}
