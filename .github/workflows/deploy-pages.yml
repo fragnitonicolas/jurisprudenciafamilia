@@ -2,10 +2,7 @@ name: Deploy web to GitHub Pages
 
 on:
   push:
-    branches: ['main', 'master', 'work']
-    paths:
-      - 'apps/web/**'
-      - '.github/workflows/deploy-pages.yml'
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -32,20 +29,17 @@ jobs:
       - name: Build static site
         run: node apps/web/scripts/build.mjs
 
-      - name: Disable Jekyll processing
-        run: touch apps/web/dist/.nojekyll
-
-      - name: Upload Pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: apps/web/dist
 
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
