@@ -1,0 +1,139 @@
+:root {
+  --bg: #0b1020;
+  --bg-soft: #121a31;
+  --text: #e8edff;
+  --muted: #a8b2d1;
+  --brand: #4f7cff;
+  --brand-soft: #84a3ff;
+  --card: #131d38;
+  --border: #243156;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top right, #1f2d56, var(--bg) 45%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.page {
+  width: min(1080px, 92vw);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(79, 124, 255, 0.14), rgba(132, 163, 255, 0.05));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+.badge {
+  margin: 0;
+  color: var(--brand-soft);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+h1 {
+  margin: 0.65rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.lead {
+  margin: 0;
+  max-width: 65ch;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: white;
+}
+
+.btn-ghost {
+  color: var(--text);
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.15rem;
+}
+
+.card h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.06rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.roadmap {
+  margin-top: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg-soft);
+  padding: 1.3rem;
+}
+
+.roadmap h2 {
+  margin: 0 0 0.7rem;
+}
+
+.roadmap ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.roadmap li + li {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 1.4rem;
+  }
+}
